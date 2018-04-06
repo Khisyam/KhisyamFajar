@@ -14,16 +14,16 @@ import java.awt.GridBagLayout;
 public class MyFrame extends javax.swing.JFrame {
 
     GridBagLayout layout  = new GridBagLayout();
-    panel1 p1;
-    panel2 p2;
+    panel1 pa1;
+    panel2 pa2;
     public MyFrame() {
         initComponents();
-        p1 = new panel1();
-        p2 = new panel2();
+        pa1 = new panel1();
+        pa2 = new panel2();
         
         DynamicPanel.setLayout(layout);
-        DynamicPanel.add(p1);
-        DynamicPanel.add(p2);
+        DynamicPanel.add(pa1);
+        DynamicPanel.add(pa2);
         
         DynamicPanel.setVisible(false);
         
@@ -111,12 +111,12 @@ public class MyFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     p1.setVisible(true);
+     pa1.setVisible(true);
         DynamicPanel.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-     p1.setVisible(false);
+     pa1.setVisible(false);
         DynamicPanel.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
