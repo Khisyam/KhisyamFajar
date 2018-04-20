@@ -16,8 +16,10 @@ public class MyFrame extends javax.swing.JFrame {
     GridBagLayout layout  = new GridBagLayout();
     panel1 pa1;
     panel2 pa2;
+    public static String simpanNama;
     public MyFrame() {
         initComponents();
+        this.setLocationRelativeTo(null);
         pa1 = new panel1();
         pa2 = new panel2();
         
@@ -38,16 +40,32 @@ public class MyFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        userName = new javax.swing.JTextField();
+        pass = new javax.swing.JPasswordField();
         DynamicPanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         login1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        userName.setBackground(new java.awt.Color(204, 204, 204));
+        userName.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        userName.setOpaque(false);
+        userName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                userNameActionPerformed(evt);
+            }
+        });
+        getContentPane().add(userName, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, 240, 20));
+
+        pass.setBackground(new java.awt.Color(204, 204, 204));
+        pass.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        pass.setOpaque(false);
+        getContentPane().add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 240, 240, -1));
 
         DynamicPanel.setOpaque(false);
         DynamicPanel.setPreferredSize(new java.awt.Dimension(301, 452));
@@ -64,6 +82,9 @@ public class MyFrame extends javax.swing.JFrame {
         );
 
         getContentPane().add(DynamicPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 300, 460));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/Asset 3.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 300, 340));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/Register Button.png"))); // NOI18N
         jButton1.setBorderPainted(false);
@@ -94,16 +115,6 @@ public class MyFrame extends javax.swing.JFrame {
         });
         getContentPane().add(login1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, 260, 50));
 
-        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextField1.setOpaque(false);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, 240, 20));
-
-        jPasswordField1.setBackground(new java.awt.Color(204, 204, 204));
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jPasswordField1.setOpaque(false);
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 240, 240, -1));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/Login.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 520));
 
@@ -121,9 +132,14 @@ public class MyFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void login1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login1ActionPerformed
+    this.simpanNama = userName.getText();
     new uiMenu().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_login1ActionPerformed
+
+    private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_userNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,8 +181,9 @@ public class MyFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton login1;
+    private javax.swing.JPasswordField pass;
+    private javax.swing.JTextField userName;
     // End of variables declaration//GEN-END:variables
 }

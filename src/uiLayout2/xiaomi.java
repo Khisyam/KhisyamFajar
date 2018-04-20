@@ -11,11 +11,10 @@ package uiLayout2;
  */
 public class xiaomi extends javax.swing.JFrame {
 
-    /**
-     * Creates new form xiaomi
-     */
+    public static int pilihan = 0 ;
     public xiaomi() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -59,8 +58,9 @@ public class xiaomi extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     new form().setVisible(true);
+     new tagihan().setVisible(true);
     this.dispose();
+    tagihan.pilih =1 ;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

@@ -16,6 +16,7 @@ public class pGadget extends javax.swing.JPanel {
      */
     public pGadget() {
         initComponents();
+    
     }
 
     /**

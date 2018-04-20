@@ -16,6 +16,7 @@ public class hp extends javax.swing.JFrame {
      */
     public hp() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

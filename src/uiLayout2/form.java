@@ -10,12 +10,17 @@ package uiLayout2;
  * @author rkhis
  */
 public class form extends javax.swing.JFrame {
-
-    /**
-     * Creates new form form
-     */
+public static String namaleng;
+public static String almt;
+public static String prov;
+public static String kota1;
+public static String pos;
+public static String telp;
+public static String email1;
+public static String pilih;
     public form() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,8 +32,16 @@ public class form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        alamat = new javax.swing.JTextField();
+        namaLengkap = new javax.swing.JTextField();
+        kota = new javax.swing.JTextField();
+        provinsi = new javax.swing.JTextField();
+        kodePoss = new javax.swing.JTextField();
+        telpon = new javax.swing.JTextField();
+        email = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -43,14 +56,35 @@ public class form extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 13, 70, 70));
 
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
+        jButton2.setText("SIMPAN");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(563, 543, 180, 40));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 530, 180, 60));
+
+        alamat.setBorder(null);
+        getContentPane().add(alamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 320, 30));
+
+        namaLengkap.setBorder(null);
+        getContentPane().add(namaLengkap, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 320, 20));
+
+        kota.setBorder(null);
+        getContentPane().add(kota, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 320, 20));
+
+        provinsi.setBorder(null);
+        getContentPane().add(provinsi, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 320, 20));
+
+        kodePoss.setBorder(null);
+        getContentPane().add(kodePoss, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 320, 20));
+
+        telpon.setBorder(null);
+        getContentPane().add(telpon, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 320, 20));
+
+        email.setBorder(null);
+        email.setOpaque(false);
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, 310, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/buat pesanan.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -59,12 +93,22 @@ public class form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    new hp().setVisible(true);
+    new akun().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    new berhasil().setVisible(true);
+    this.namaleng = namaLengkap.getText();
+    this.almt = alamat.getText();
+    this.prov = provinsi.getText();
+    this.kota1 = kota.getText();
+    this.pos = kodePoss.getText();
+    this.telp = telpon.getText();
+    this.email1 = email.getText();
+    
+
+        
+    new akun().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -104,8 +148,16 @@ public class form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField alamat;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JTextField email;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField kodePoss;
+    private javax.swing.JTextField kota;
+    private javax.swing.JTextField namaLengkap;
+    private javax.swing.JTextField provinsi;
+    private javax.swing.JTextField telpon;
     // End of variables declaration//GEN-END:variables
 }

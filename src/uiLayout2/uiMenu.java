@@ -18,6 +18,8 @@ public class uiMenu extends javax.swing.JFrame {
     public uiMenu() {
         initComponents();
         
+        this.setLocationRelativeTo(null);
+        
 //        g1 = new gadget();
 //        
 //        panelMenu.setLayout(layout2);
@@ -66,6 +68,11 @@ public class uiMenu extends javax.swing.JFrame {
 
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 190, 180));
 
         jButton2.setBorderPainted(false);
@@ -79,10 +86,20 @@ public class uiMenu extends javax.swing.JFrame {
 
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 180, 180));
 
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 180, 180));
 
         pack();
@@ -98,6 +115,21 @@ public class uiMenu extends javax.swing.JFrame {
     new akun().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    new televisi().setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    new mesinCuci().setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    new kulkas().setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

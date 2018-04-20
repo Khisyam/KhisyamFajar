@@ -10,12 +10,10 @@ package uiLayout2;
  * @author rkhis
  */
 public class samsung extends javax.swing.JFrame {
-
-    /**
-     * Creates new form samsung
-     */
+public static int pilihan1 = 0;
     public samsung() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -59,8 +57,9 @@ public class samsung extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    new form().setVisible(true);
+    new tagihan().setVisible(true);
     this.dispose();
+    tagihan.pilih1 = 2;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

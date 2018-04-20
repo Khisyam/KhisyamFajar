@@ -10,12 +10,10 @@ package uiLayout2;
  * @author rkhis
  */
 public class iphonex extends javax.swing.JFrame {
-
-    /**
-     * Creates new form iphonex
-     */
+public static int pilihan3 = 0;
     public iphonex() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -59,12 +57,13 @@ public class iphonex extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    new form().setVisible(true);
+    new tagihan().setVisible(true);
     this.dispose();
+    tagihan.pilih2 = 3;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-     new hp().setVisible(true);
+    new hp().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -18,6 +18,7 @@ public class ui_Home extends javax.swing.JPanel {
    
     public ui_Home() {
         initComponents();
+
         pn1 = new pGadget();
         
                 

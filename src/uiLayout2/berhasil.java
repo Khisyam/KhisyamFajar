@@ -16,6 +16,15 @@ public class berhasil extends javax.swing.JFrame {
      */
     public berhasil() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.n.setText(form.namaleng);
+        this.a.setText(form.almt);
+        this.k.setText(form.kota1);
+        this.p.setText(form.prov);
+        this.ko.setText(form.pos);
+        this.tel.setText(form.telp);
+        this.em.setText(form.email1);
+
     }
 
     /**
@@ -27,13 +36,74 @@ public class berhasil extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ko = new javax.swing.JLabel();
+        k = new javax.swing.JLabel();
+        p = new javax.swing.JLabel();
+        n = new javax.swing.JLabel();
+        tel = new javax.swing.JLabel();
+        em = new javax.swing.JLabel();
+        a = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/home.png"))); // NOI18N
+        ko.setText("jLabel2");
+        getContentPane().add(ko, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, -1, -1));
+
+        k.setText("jLabel2");
+        getContentPane().add(k, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, -1, -1));
+
+        p.setText("jLabel2");
+        getContentPane().add(p, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
+
+        n.setText("jLabel2");
+        getContentPane().add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
+
+        tel.setText("jLabel2");
+        getContentPane().add(tel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, -1, -1));
+
+        em.setText("jLabel2");
+        getContentPane().add(em, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
+
+        a.setText("jLabel2");
+        getContentPane().add(a, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, -1, -1));
+
+        jLabel2.setText("Kota       :");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
+
+        jLabel3.setText("Nama     :");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, -1, -1));
+
+        jLabel4.setText("Provinsi  :");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
+
+        jLabel5.setText("Kode Pos :");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
+
+        jLabel6.setText("No. Telp :");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
+
+        jLabel7.setText("E-mail     :");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
+
+        jLabel9.setText("Alamat   :");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Myriad Pro Light", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("INFORMASI AKUN");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 25, -1, 40));
+
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -41,16 +111,16 @@ public class berhasil extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 80, 70));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 23, 70, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/rincian.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uiLayout2/polos.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    new uiMenu().setVisible(true);
+    new akun().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -90,7 +160,22 @@ public class berhasil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel a;
+    private javax.swing.JLabel em;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel k;
+    private javax.swing.JLabel ko;
+    private javax.swing.JLabel n;
+    private javax.swing.JLabel p;
+    private javax.swing.JLabel tel;
     // End of variables declaration//GEN-END:variables
 }
